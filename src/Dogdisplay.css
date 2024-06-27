@@ -1,0 +1,43 @@
+.Dogdisplay {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.Dogdisplay-img {
+    filter: grayscale(100);
+    width: 250px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.Dogdisplay:hover .Dogdisplay-img {
+    filter: grayscale(0);
+}
+
+.Dogdisplay-name {
+    width: 120px;
+    margin-top: 20px;
+    transition: all ease-in-out 250ms;
+    margin-bottom: 0;
+}
+
+.Dogdisplay div {
+    margin-top: 0;
+    height: 2px;
+    width: 1px;
+    transition: all linear 250ms;
+    background-color: transparent;
+}
+
+.Dogdisplay:hover div {
+    transform: scaleX(120);
+    background-color: black;
+}
+
+.Dogdisplay-name:link {
+    text-decoration: none;
+}
