@@ -13,11 +13,11 @@ export default function Navbar({dogs}) {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                        <Link exact to={`/dogs`} className="nav-link active" aria-current="page" href="#">Home</Link>
+                        <NavLink exact to={`/dogs`} className="nav-link" aria-current="page" href="#">Home</NavLink>
                     </li>
                     {linkArr.map((el, idx) => (
                         <li key={idx} className="nav-item">
-                            <Link exact to={`/dogs/${el}`} className="nav-link" href="#">{ el }</Link>
+                            <NavLink exact to={`/dogs/${el}`} className="nav-link" href="#">{ el }</NavLink>
                         </li>
                     )) }    
                 </ul>

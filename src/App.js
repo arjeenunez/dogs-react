@@ -1,4 +1,4 @@
-import {Routes, Route, Navigate} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import Dog from "./Dog";
 import Dogs from "./Dogs";
 import Errorpage from "./Errorpage";
